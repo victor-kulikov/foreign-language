@@ -1,0 +1,109 @@
+.content-news {
+	.flexF();
+	justify-content: space-between;
+	margin-bottom: @margin-bottom-secondary;
+	&__item {
+		flex-shrink: 1;
+		flex-grow: 1;
+	}
+}
+
+.news {
+	flex-basis: 840px;
+	margin-bottom: @margin-bottom-secondary;
+	&__item {
+		.flexF();
+		justify-content: space-between;
+		margin-bottom: @margin-bottom-secondary;
+	}
+	&__img {
+		width: 370px;
+		margin-right: 2%;
+	}
+	&__detailed {
+		.flexGcol();
+		justify-content: space-between;
+		width: 100%;
+		margin-right: 2.5%;
+	}
+	&__data {
+		width: 100px;
+		background-color: @color-button-secondary; 
+		padding: 9px;
+		margin-bottom: 16px;
+	}
+	&__title {
+		margin-bottom: 0;
+		margin-bottom: 16px;
+	}
+	&__paragraph {
+		margin-bottom: 18px;
+	}
+	&__link {
+		color: @color-button-home;
+		i {
+			vertical-align: middle;
+		}
+	}
+}
+
+.skype-training {
+	flex-basis: 280px;
+	.headline__title {
+		font-size: 18px;
+		margin-bottom: 25px;
+		width: 93%;
+	}
+}
+
+.skype-links {
+	margin-bottom: @margin-bottom-secondary;
+	.headline {
+		margin-bottom: 0;
+	}
+	&__link-skype {
+		.flexF();
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 8px;
+		overflow: hidden;
+		background-color: @bg-body;
+		box-shadow: 0px 0px 4px 4px #e3e3e3;
+		height: 75px;
+		&:hover {
+			display: flex;
+		}
+	}
+	&__img {
+		width: 60px;
+		height: 75px;
+	}
+	&__title-text {
+		.flexGcol();
+	}
+	&__img2 {
+		margin-right: -20px;
+		width: 75px;
+	}
+}
+
+.training-links {
+	margin-bottom: @margin-bottom-secondary;
+	.headline {
+		margin-bottom: 0;
+	}
+	.training__course {
+		margin-bottom: 0;
+	}
+	span {
+		font-size: 13px;
+	}
+	&__link-training {
+		color: @text-p;
+  border: 2px solid @main-color;
+  padding: 13px 7px;
+  margin-bottom: 8px;
+	}
+}
+
+

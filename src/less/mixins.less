@@ -1,0 +1,85 @@
+.flexG() {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flexF() {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.flexGcol() {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.flexI {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.icons-social() {
+    fill: @main-color;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.green-block() {
+    background: @main-color;
+    padding: 3px 30px;
+    color: @bg-body;
+}
+
+.button-home() {
+    background-color: @color-button-home;
+    color: @bg-body;
+    border: 1px solid @color-button-home;
+    border-radius: 30px;
+    display: block;
+    padding: 11px 22px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.button-home-secondary() {
+    background-color: @color-button-secondary;
+    border: 1px solid @color-button-secondary;
+    color: @text-p;
+}
+
+.slick-arrow-border(@color: @main-color;@width: 1px;@type: solid) {
+    border: @width @type @color;
+}
+
+.slick-arrow-color(@color: @main-color;@bg-color: transparent) {
+    color: @color;
+    background-color: @bg-color;
+}
+
+.font-weight(@font-weight: 500;) {
+    font-weight: @font-weight;
+}

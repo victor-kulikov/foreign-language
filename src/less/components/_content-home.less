@@ -1,0 +1,530 @@
+.headline {
+    text-align: center;
+    margin-bottom: 60px;
+    &__title {
+        color: @link-color;
+        margin: 0 auto 40px;
+        position: relative;
+        font-size: @font-size-H2;
+        line-height: 30px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            width: 35px;
+            height: 16px;
+            background: url(../../images/rombus.png) no-repeat;
+            margin-left: 6px;
+        }
+    }
+    &__title--slightly {
+        width: 93%;
+    }
+    &__text {
+        color: @text-p;
+        width: 85%;
+        margin: auto;
+    }
+}
+
+.skype-selection {
+    .flexG();
+    justify-content: space-around;
+    margin-bottom: 60px;
+    &__item {
+        box-shadow: 8px 10px 5px #f4f4f4;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 60px;
+        margin-left: 10px;
+        &:hover .skype-selection__link {
+            position: absolute;
+            bottom: 0px;
+            opacity: 1;
+        }
+    }
+    &__img2 {
+        position: absolute;
+        top: 19px;
+        right: -18px;
+    }
+    &__language {
+        color: @link-color;
+        transform: rotate(270deg);
+        right: -63px;
+        bottom: 106px;
+        position: absolute;
+    }
+    &__headline {
+        font-size: 28px;
+        span {
+            font-size: 11px;
+        }
+    }
+    &__language-notran {
+        transform: none;
+        right: 40px;
+        width: 44%;
+        bottom: 55px;
+    }
+    &__link {
+        position: absolute;
+        bottom: 460px;
+        opacity: 0;
+        transition: .5s linear;
+    }
+}
+
+.familiarization {
+    .flexG();
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.familiarization-content {
+    padding-top: 28px;
+    flex: 1 4 600px;
+    &__item {
+        .flexGcol();
+        margin-right: 16px;
+    }
+    &__text {
+        margin-bottom: 28px;
+        color: @text-p;
+    }
+    &__list {
+        .flexG();
+    }
+    &__item-link {
+        .flexF;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 16px;
+        margin-bottom: 29px;
+        width: 46%;
+        span {
+            color: @main-color;
+            font-size: 24px;
+            margin-right: 9px;
+        }
+    }
+    &__links {
+        .flexG();
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__links a {
+        margin-bottom: 15px;
+    }
+}
+
+.quote {
+    text-align: right;
+    flex-basis: 405px;
+    &__phrase {
+        font-size: 20px;
+        margin-bottom: 15px;
+        &:before,
+        &:after {
+            position: relative;
+            font-size: 32px;
+            line-height: 0;
+            opacity: 0.2;
+        }
+        &:before {
+            content: "\201e";
+            right: 0.32px;
+        }
+        &:after {
+            content: "\201c";
+            top: 0.32px;
+        }
+    }
+    &__img {
+        margin-top: 64px;
+        position: relative;
+    }
+}
+
+.for-foreigners {
+    .flexF;
+    position: relative;
+    margin-bottom: 78px;
+    &__item {
+        .flexF;
+        position: relative;
+        width: 50%;
+    }
+    &__item:first-child {
+        justify-content: flex-end;
+    }
+    &__img img {
+        min-height: 160px;
+        object-fit: cover;
+        max-height: 700px;
+    }
+    &__wrapper1 {
+        .flexGcol();
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        align-items: flex-start;
+        justify-content: space-around;
+        max-width: 570px;
+        padding: 15px;
+    }
+    &__h6 {
+        font-size: 16px;
+        color: @link-color;
+        background-color: @color-button-secondary;
+        padding: 1.38% 30px;
+    }
+    &__rhombus {
+        width: 33px;
+        height: 16px;
+    }
+    &__h2 {
+        width: 100%;
+        position: relative;
+        font-size: 36px;
+        color: @bg-body;
+        line-height: 30px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 16px;
+            background: url(../../images/rombus.png) no-repeat;
+            top: -21px;
+        }
+    }
+    &__p {
+        color: @bg-body;
+        width: 100%;
+    }
+    &__wrapper1--left {
+        right: 0;
+    }
+    &__wrapper1--right {
+        text-align: right;
+        align-items: flex-end;
+        left: 0;
+        .forForeigners__h2 {
+            &:before {
+                right: 0;
+            }
+        }
+    }
+}
+
+.advantage {
+    .flexG();
+    justify-content: space-between;
+    margin-bottom: 58px;
+    &__item {
+        .flexGcol();
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        margin: 0 10px 24px;
+        flex-basis: 250px;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__img {
+        margin-bottom: 25px;
+        width: 100px;
+        height: 90px;
+    }
+    &__text {
+        .flexGcol();
+        justify-content: space-between;
+        max-width: 250px;
+    }
+    &__h6 {
+        margin-bottom: 20px;
+        font-size: 18px;
+        width: 100%;
+    }
+    &__p {
+        width: 100%;
+    }
+}
+
+.training {
+    .flexG();
+    justify-content: space-between;
+    &__item {
+        color: @text-p;
+        border: 2px solid @main-color;
+        flex-basis: 305px;
+        margin: 20px 5px;
+        flex-grow: 1;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        display: flex;
+        &:hover .training__front {
+            transform: rotateY(-180deg);
+            transform-style: preserve-3d;
+        }
+        &:hover .training__back {
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+        }
+    }
+    &__front {
+        .flexGcol();
+        transform: rotateY(0deg);
+        padding: 37px 30px 21px;
+        width: 100%;
+    }
+    &__course {
+        .flexF;
+        margin-bottom: 23px;
+        align-items: center;
+    }
+    &__img {
+        width: 50px;
+        margin-right: 25px;
+    }
+    &__title {
+        font-size: 20px;
+        color: @main-color;
+        text-transform: uppercase;
+        max-width: 279px;
+        line-height: 24px;
+        font-weight: 400;
+        span {
+            font-size: 12px;
+            color: @text-p;
+            text-transform: initial;
+        }
+    }
+    &__duration {
+        .flexF;
+        margin-bottom: 9px;
+    }
+    &__img-small {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+    &__front,
+    &__back {
+        transition: 1s;
+        cursor: pointer;
+        -webkit-transition: 1s;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    &__back {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    &__link {
+        text-align: center;
+        text-decoration: underline;
+        line-height: 21;
+        color: @bg-body;
+        background: url(../../images/training__img-hover.jpg) no-repeat 50% 50%;
+        background-size: cover;
+        height: 100%;
+    }
+    &__p {
+        max-width: 310px;
+        margin-bottom: 8px;
+    }
+}
+
+.classroom {
+    .flexG();
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &__item {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        width: 48%;
+    }
+    &__for-img {
+        width: 40px;
+        margin-right: 25px;
+        float: left;
+        height: 100%;
+        margin-bottom: 32px;
+    }
+    &__img {
+        width: 40px;
+        height: 40px;
+        float: left;
+    }
+    &__h6 {
+        margin-bottom: 13px;
+    }
+    &__p {
+        margin-bottom: 10px;
+    }
+}
+
+.full-page {
+    background-image: url(../../images/manwlaptop.jpg);
+    background-size: cover;
+    padding: 7.62% 0 5.77%;
+    margin-bottom: 60px;
+    &__wrapper {
+        max-width: 768px;
+        .flexG();
+        .forForeigners__h2 {
+            font-size: 36px;
+            color: @bg-body;
+            margin-bottom: 0.7px;
+            position: relative;
+            margin-bottom: 25px;
+            line-height: 44px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 16px;
+                background: url(../../images/rombus.png) no-repeat;
+                top: -15px;
+            }
+            span {
+                color: @color-button-secondary;
+            }
+        }
+    }
+    &__p {
+        color: @bg-body;
+        margin-bottom: 28px;
+        max-width: 590px;
+    }
+}
+
+.sign-up {
+    .flexG();
+    justify-content: space-between;
+    overflow-x: hidden;
+    &__item {
+        padding: 12px 12px 12px 24px;
+        border-radius: 50px;
+        margin-bottom: 16px;
+        background-color: @bg-body;
+        border: none;
+        width: 45%;
+        overflow-x: hidden;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__item:nth-child(even) {
+        margin-right: 0;
+    }
+    .choiceG {
+        color: @text-p;
+    }
+    .choice {
+        padding: 0;
+        border: none;
+        flex-grow: 1;
+        margin: 0;
+        -webkit-appearance: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__p {
+        margin-bottom: 7px;
+    }
+    &__p-small {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.sign-up-text {
+    .flexF;
+    color: @bg-body;
+    margin-top: 24px;
+    justify-content: space-between;
+    flex-basis: 770px;
+    .sign-up__item--link {
+        flex-grow: 0;
+        flex-basis: 220px;
+        margin-right: 20px;
+    }
+    &__pg {
+        flex-basis: 505px;
+    }
+}
+
+.slider-text {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+    visibility: hidden;
+    &__item {
+        .flexGcol();
+        width: 100%;
+        max-width: 788px;
+    }
+    &__for-p {
+        &:before,
+        &:after {
+            position: absolute;
+        }
+        &:before {
+            content: url(../../images/quotesL.png);
+            bottom: 0;
+            left: 0px;
+        }
+        &:after {
+            content: url(../../images/quoetsR.png);
+            top: 0;
+            right: 0px;
+        }
+    }
+    &__author {
+        padding-top: 25px;
+        border-top: 1px dotted @main-color;
+        margin: 2.813em auto;
+        max-width: 200px;
+    }
+    .slick-arrow {
+        .slick-arrow-border();
+        .slick-arrow-color();
+    }
+    .slider-text-prev {
+        left: -20%;
+
+        i {
+            &:before {
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .slider-text-next {
+        right: -18%;
+    }
+}
+
+.img-fixed {
+    .flexF;
+    max-width: 1300px;
+    justify-content: space-between;
+    margin: 0px auto -68px;
+    padding: 0 15px;
+}

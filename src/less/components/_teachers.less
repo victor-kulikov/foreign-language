@@ -1,0 +1,153 @@
+.teachers {
+    &__item {
+        .flexGcol() !important;
+        text-align: center;
+        justify-content: flex-start;
+        padding: 40px 28px;
+        background-color: @bg-body;
+        box-shadow: 0px 0px 4px 4px #e3e3e3;
+        margin-bottom: @margin-bottom-secondary;
+        margin-top: 5px;
+        max-width: 310px;
+    }
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        align-self: center;
+        margin-bottom: 21px;
+    }
+    &__name {
+        align-self: center;
+        margin-bottom: 21px;
+    }
+    &__knowledge {
+        .flexF();
+        font-size: 14px;
+        margin-bottom: 14px;
+        text-align: left;
+    }
+    &__knowledge:last-child {
+        margin-bottom: 0;
+    }
+    &__heading {
+        font-weight: bold;
+        width: 50%;
+    }
+    &__text {
+        width: 50%;
+    }
+}
+
+.tab-content__item {
+    .flexF();
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+    transition: none;
+    .slick-arrow {
+        opacity: 1;
+        top: 38%;
+        .slick-arrow-border();
+        .slick-arrow-color();
+    }
+    .teachers-prev {
+        left: 7px;
+        i {
+            &:before {
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .teachers-next {
+        right: 7px;
+    }
+    &--active {
+        display: block;
+        height: auto;
+    }
+    &>div {
+        width: 100%;
+    }
+    .slick-dots {
+        bottom: 3px;
+        li {
+            border: 2px solid transparent;
+            height: 30px;
+            width: 30px;
+            margin: 5px 10px;
+            padding: 5px 1px;
+        }
+        li a {
+            transform: rotate(0deg);
+             transition: none;
+        }
+        li:hover {
+            border: 2px solid @main-color;
+            transform: rotate(45deg);
+        }
+        li:hover a {
+            transform: rotate(-45deg);
+            color: @main-color;
+            transition: none;
+        }
+        li.slick-active {
+            border: 2px solid @main-color;
+            transform: rotate(45deg);
+            a {
+                transform: rotate(-45deg);
+                color: @main-color;
+                transition: none;
+            }
+        }
+    }
+}
+
+.slider1,
+.slider2,
+.slider3 {
+    visibility: hidden;
+}
+
+.slick-slide {
+    margin: 0 10px;
+    &>div {
+        .flexG();
+        justify-content: center;
+    }
+}
+
+.slick-initialized .slick-slide {
+    .flexG();
+}
+
+.bg-picture-teachers {
+    margin-bottom: 0;
+}
+
+.bg-picture__form {
+    align-items: center;
+    input {
+        width: 28%;
+        margin-bottom: 23px;
+    }
+    .sign-up__item--area {
+        flex-grow: 1;
+    }
+    .bg-picture__text {
+        text-align: center;
+        margin-bottom: 28px;
+        &:before {
+            content: "\0021";
+            color: @main-color;
+            margin-right: 16px;
+        }
+    }
+}
+
+input[type="submit"] {
+    text-align: center;
+    cursor: pointer;
+    max-width: 250px;
+    margin: auto;
+}

@@ -1,0 +1,561 @@
+@media screen and (min-width: 1400px) {
+  .prev {
+    left: 0%;
+  }
+  .next {
+    right: 0%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .slidertop__link {
+    margin-bottom: 32px;
+  }
+  .slidertop__text {
+    font-size: 20px;
+  }
+  .slidertop .slick-dots {
+    bottom: 40px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1499px) {
+  .slidertop .slidertop__wrapper {
+    left: 11%;
+  }
+  .slidertop .slick-dots {
+    bottom: 13px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navy {
+    width: 72%;
+  }
+  .slidertop__wrapper {
+    left: 9%;
+  }
+  .slick-dots {
+    bottom: 10px;
+  }
+  .for-foreigners__wrapper1 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .prev,
+  .next {
+    display: none;
+  }
+  .slidertop .slickprev {
+    left: 4%;
+    display: none;
+  }
+  .slidertop .slicknext {
+    right: 4%;
+    display: none;
+  }
+  .bg-img__h2 {
+    margin-bottom: 17px;
+  }
+  .lessons-information__item:first-child {
+    margin-right: 0;
+  }
+  .lessons-information__item:last-child {
+    display: none;
+  }
+  .advantage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .advantage__item {
+    margin: 0 16px 32px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .advantage__text {
+    height: 100%;
+  }
+  .for-foreigners__wrapper1 {
+    max-width: 500px;
+  }
+  .for-foreigners__h2 {
+    font-size: 30px;
+  }
+  .familiarization-content__link {
+    margin-bottom: 3px;
+  }
+  .content-news {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .subject__items--more {
+    padding-left: 60px;
+  }
+  .subject__item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .subject__item:nth-child(even):not(.subject__item--right) {
+    padding-left: 0;
+  }
+  .skype-training .headline__title:after {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .headertop__child {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .small-monitor {
+    display: block;
+  }
+  .big-monitor {
+    display: none;
+  }
+  .for-foreigners {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .for-foreigners__item:first-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .for-foreigners__wrapper1 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .subject__items--more h6 {
+    padding-right: 49%;
+  }
+  .news {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navy-mob__link,
+  .navy-mob__item--active,
+  .additional__link--green,
+  .additional__link--grey {
+    margin: 0;
+  }
+  .right-child__item--color {
+    display: none;
+  }
+  .slidertop {
+    margin-bottom: 40px;
+  }
+  .slidertop__wrapper {
+    padding: 15px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .slidertop__link {
+    margin-bottom: 12px;
+  }
+  .slidertop__title {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .slidertop__text {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .slidertop__signup {
+    padding: 12px;
+  }
+  .headline__title {
+    font-size: 24px;
+  }
+  .skype-selection {
+    margin-bottom: 0;
+  }
+  .familiarization-content {
+    padding-top: 0;
+    margin-bottom: 24px;
+  }
+  .classroom__item {
+    width: 100%;
+  }
+  .for-foreigners {
+    margin-bottom: 40px;
+  }
+  .for-foreigners__item {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5px;
+  }
+  .for-foreigners__wrapper1 {
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .for-foreigners__p--right {
+    text-align: center;
+  }
+  .after-courses__paragraph {
+    width: 100%;
+  }
+  .training-rules {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .training-rules__item {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 98%;
+  }
+  .training-rules__paragraph--imgnone {
+    display: none;
+  }
+  .sign-up__item {
+    width: 100%;
+  }
+  .news__img {
+    display: none;
+  }
+  .slider-text {
+    margin-bottom: 32px;
+  }
+  .img-fixed {
+    display: none;
+  }
+  .subject {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .subject__item {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subject__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .subject__items {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .subject__h6 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .subject__items:first-child h6,
+  .subject__items:nth-child(2) h6,
+  .subject__items:last-child h6 {
+    padding-right: 0;
+  }
+  .subject__items--more {
+    padding-left: 0;
+  }
+  .subject__p {
+    margin-top: 0;
+  }
+  .tab-block__list {
+    width: 100%;
+  }
+  .tab-block__paragraph {
+    width: 100%;
+  }
+  .bg-picture__form input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .sign-up-text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sign-up-text__pg {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .bg-img__h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 668px) {
+  .headerbottom {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .headertop {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 0;
+    border-top: 2px solid #ccc;
+  }
+  .headertop__child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .training .training__item {
+    text-align: center;
+  }
+  .training__course,
+  .training__duration {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subject__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .training__img {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .headertop__child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headertop__languages {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .slidertop__wrapper {
+    top: 4%;
+  }
+  .headline {
+    margin-bottom: 40px;
+  }
+  .slidertop__signup.button-home {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .skype-selection__item {
+    margin-bottom: 40px;
+  }
+  .subject__items--more h6 {
+    padding-right: 50%;
+  }
+  .tab-block__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tab-block__item:first-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+  .tab-block__item:last-child {
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+  .for-foreigners__wrapper1 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .training__p {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .slidertop__wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .slidertop__title {
+    font-size: 24px;
+  }
+  .slidertop__text {
+    display: none;
+  }
+  .familiarization-content__item-link {
+    width: 100%;
+  }
+  .familiarization-content__link {
+    margin-bottom: 16px;
+  }
+  .advantage__item {
+    margin-bottom: 32px;
+  }
+  .after-courses__link:first-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 25px;
+  }
+  .after-courses__link:last-child {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
+  }
+  .for-foreigners__h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .slidertop__wrapper {
+    top: 2%;
+  }
+  .slidertop__link,
+  .slidertop__text,
+  .slidertop__signup {
+    font-size: 12px;
+  }
+  .slidertop__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .slidertop__text {
+    margin-bottom: 8px;
+  }
+  .slidertop__signup {
+    padding: 8px 12px;
+  }
+  .familiarization {
+    margin-bottom: 0;
+  }
+  .familiarization .quote {
+    display: none;
+  }
+  .familiarization .familiarization-content__item {
+    width: 100%;
+  }
+  .skype-selection__language-notran {
+    bottom: 0;
+  }
+  .skype-selection__headline-horizontal {
+    font-size: 24px;
+  }
+  .advantage__img {
+    margin-bottom: 5px;
+  }
+  .slider-text {
+    margin-bottom: 0;
+  }
+  .subject__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subject__item {
+    margin-bottom: 10px;
+  }
+  .subject__h6 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 385px) {
+  .small-monitor__logo {
+    width: 65%;
+  }
+  .additional {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .additional__item {
+    width: 100%;
+  }
+  .navy-mob__link,
+  .navy-mob__item--active,
+  .additional__link--green,
+  .additional__link--grey {
+    font-size: 14px;
+  }
+  .slidertop__link {
+    font-size: 12px;
+  }
+  .for-foreigners__p {
+    display: none;
+  }
+}
+@media screen and (max-width: 376px) {
+  .slidertop__wrapper {
+    top: 0;
+  }
+  .slidertop__link {
+    margin-bottom: 10px;
+  }
+  tbody {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slidertop__link,
+  .slidertop__text {
+    font-size: 10px;
+  }
+  .slidertop__wrapper {
+    left: 0;
+  }
+  .familiarization-content__item-link {
+    margin-right: 0;
+  }
+  .familiarization-content__link {
+    padding: 15px 20px;
+  }
+  .familiarization-content__link--secondary2 {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .training__front {
+    padding: 13px;
+  }
+  .skype-selection__language-notran {
+    right: 25px;
+  }
+  .skype-selection__headline-horizontal {
+    font-size: 20px;
+  }
+  .course-fees__cell {
+    padding: 15px;
+  }
+  .subject__h6 {
+    margin-right: 0;
+  }
+  .button-home--secodary {
+    padding: 11px;
+  }
+  .for-foreigners__wrapper1--right .for-foreigners__h2:before {
+    right: 37px;
+    top: -12px;
+  }
+  .classroom__for-img {
+    margin-right: 15px;
+  }
+  .sign-up__item {
+    padding-left: 13px;
+  }
+  .timetable {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .timetable__img {
+    padding-right: 7px;
+  }
+  .headline__title {
+    margin: 0;
+  }
+}

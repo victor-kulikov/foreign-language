@@ -1,0 +1,247 @@
+.stickytop {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    top: 0;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+    width: 100%;
+    .small-monitor {
+        padding: 5px 0;
+    }
+}
+
+.headermain {
+    .flexGcol();
+}
+
+.headertop {
+    background-color: @header-top-color;
+    line-height: 2.14;
+    margin-bottom: 5px;
+    &__child {
+        .flexG();
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__right {
+        .flexG();
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+.right-child {
+    a:hover,
+    a:focus {
+        display: inline-block;
+    }
+    &__item {
+        margin-left: 31px;
+        .face {
+            .icons-social;
+        }
+    }
+    &__link--color {
+        .green-block();
+    }
+}
+
+.languages {
+    &__item {
+        font-weight: 400;
+        display: inline-block;
+    }
+    &__item:nth-child(2) {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    &__item--active {
+        a {
+            border-bottom: @border-hover;
+        }
+    }
+    &__link:hover {
+        border-bottom: @border-hover;
+    }
+}
+
+.big-monitor {
+    .flexG();
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 23px;
+}
+
+.navy {
+    line-height: 30px;
+    font-weight: 400;
+    width: 63%; 
+    &__list {
+      .flexF();
+      align-items: center;
+      justify-content: space-between;   
+    }
+    &__item {
+        position: relative;
+        padding: 5px 0;
+    }
+    &__item-sub-menu {
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+    &__item:hover>.sub-menu__navy {
+        display: block;
+    }
+    &__item--active {
+        border-bottom: @border-hover;
+    }
+    &__link {
+        padding: 5px 0;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            border-bottom: @border-hover;
+        }
+    }
+    &__link-sub-menu {
+        color: @link-sub-menu;
+        background-color: transparent;
+        padding: 12px 10px;
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+    }
+    &__link-sub-menu:hover {
+        color: @main-color;
+    }
+}
+
+.menu-item-has-children:after {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    border: 4px solid transparent;
+    border-top: 4px solid;
+    position: absolute;
+    top: 47%;
+    right: -12px;
+}
+
+.small-monitor {
+    display: none;
+    &__languages {
+        margin-bottom: 25px;
+        clear: both;
+    }
+}
+
+.header-mob {
+    .flexG();
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px 5px;
+}
+
+.show-m-but {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        background-color: @main-color;
+        margin: 4px;
+        margin-left: auto;
+    }
+}
+
+.m-bm-hidden {
+    display: none;
+    text-align: center;
+    height: auto;
+    overflow-x: auto;
+    border-top: 1px solid @main-color;
+    margin-bottom: 5px;
+}
+
+.navy-mob {
+    &__link {
+        margin-right: 25px;
+        margin-left: 25px;
+        line-height: 2.75;
+        font-weight: 700;
+        position: relative;
+        z-index: 10;
+    }
+    &__sub-menu {
+        display: none;
+    }
+    &__item {
+        position: relative;
+        line-height: 2.75;
+        font-weight: 700;
+    }
+    &__link-sub-menu {
+        font-weight: normal;
+        padding: 9px 0;
+    }
+    & li.active-m>.f-b-go-t i {
+        transform: rotate(270deg);
+        padding-left: 1px;
+    }
+    &__item.active-m>.navy-mob__sub-menu {
+        display: block;
+    }
+}
+
+
+.sub-menu__navy {
+    position: absolute;
+    z-index: 20;
+    background-color: @bg-body;
+    display: none;
+}
+
+.f-b-go-t {
+    position: absolute;
+    font-size: 20px;
+    text-align: right;
+    width: 100%;
+    color: @main-color;
+    transform: translateX(-80%);
+    top: -3px;
+    i {
+        transform: rotate(90deg);
+    }
+}
+
+.additional {
+    .flexF();
+    &__item {
+        .flexG();
+        flex-grow: 1;
+        a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    &__link--green {
+        background-color: @main-color;
+        color: @bg-body;
+        width: 100%;
+        .flexG();
+        align-items: center;
+        justify-content: center;
+    }
+    &__link--grey {
+        background-color: @header-top-color;
+        margin-left: 0;
+        width: 100%;
+    }
+}
